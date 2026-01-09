@@ -13,7 +13,9 @@ bench = false
 
 [dependencies]
 cfg-if = "1.0"
-rustc-demangle = "0.1.21"
+# FIXME(fmease): Temporary until <https://github.com/rust-lang/rustc-demangle/pull/87> gets merged.
+# rustc-demangle = "0.1.21"
+rustc-demangle = { version = "0.1.27", git = "https://github.com/fmease/rustc-demangle.git", rev = "dda854fcc5a6766c4d12d84e18cc73f0f9ecf592" }
 libc = { version = "0.2.156", default-features = false }
 
 [target.'cfg(not(all(windows, target_env = "msvc", not(target_vendor = "uwp"))))'.dependencies]

@@ -151,9 +151,8 @@ dependencies = [
 
 [[package]]
 name = "rustc-demangle"
-version = "0.1.24"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "719b953e2095829ee67db738b3bfa9fa368c94900df327b3f07fe6e794d2fe1f"
+version = "0.1.27"
+source = "git+https://github.com/fmease/rustc-demangle.git?rev=dda854fcc5a6766c4d12d84e18cc73f0f9ecf592#dda854fcc5a6766c4d12d84e18cc73f0f9ecf592"
 
 [[package]]
 name = "ruzstd"
