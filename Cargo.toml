@@ -27,7 +27,9 @@ exclude = [
 
 [dependencies]
 cfg-if = "1.0"
-rustc-demangle = "0.1.24"
+# FIXME(fmease): Temporary until <https://github.com/rust-lang/rustc-demangle/pull/87> gets merged.
+# rustc-demangle = "0.1.24"
+rustc-demangle = { git = "https://github.com/fmease/rustc-demangle.git", rev = "2631bdf63859c05ad2dba93726a43ed9a7427c9c" }
 
 # Optionally enable the ability to serialize a `Backtrace`, controlled through
 # the `serialize-serde` feature below.
